@@ -1,6 +1,3 @@
-
-
-
 const app = require("./index");
 const connect = require("./config/db.js");
 
