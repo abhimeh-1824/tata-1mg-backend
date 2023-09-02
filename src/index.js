@@ -47,7 +47,7 @@ app.use("/item", ItemsController)
 app.use("/uses", UsesController)
 app.use("/productForm", ProductFormController)
 
-app.get("", async (req, res) => {
+app.get("/", async (req, res) => {
     res.status(200).send({
         demo: 'true'
     })
