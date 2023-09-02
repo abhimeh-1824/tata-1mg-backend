@@ -3,6 +3,6 @@
 const mongoose = require("mongoose");
 module.exports = () => {
   return mongoose.connect(
-    "mongodb+srv://Vaibhav_0702:Vaibhav_0702@cluster0.lzfpk.mongodb.net/tata-1Mg?retryWrites=true&w=majority"
+    "mongodb+srv://abhishke159:mehra951@cluster0.n2x8iir.mongodb.net/?retryWrites=true&w=majority"
   );
 };
