@@ -1,13 +1,8 @@
 const express = require("express");
-
 const cors = require("cors");
-
 const brandsController = require("./controller/Featured_brands.controller");
-
 const ayurvadaController = require("./controller/Ayurveda.controller.js");
-
 const energydrinkController = require("./controller/Energy_drink.controller");
-
 const combosController = require("./controller/combos.controller");
 
 const trendingController = require("./controller/trending.controller");
@@ -52,8 +47,10 @@ app.use("/item", ItemsController)
 app.use("/uses", UsesController)
 app.use("/productForm", ProductFormController)
 
-app.get("", (req, res) => {
-    res.status(200).send("complete")
+app.get("", async (req, res) => {
+    res.status(200).send({
+        demo: 'true'
+    })
 })
 
 
