@@ -27,6 +27,16 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", async (req, res) => {
+    res.status(200).send({
+        demo: 'true',
+        newSchema: 'true'
+    })
+})
+
+
+
+
 app.use("/brands", brandsController);
 app.use("/ayurveda", ayurvadaController);
 app.use("/energydrink", energydrinkController);
@@ -46,12 +56,7 @@ app.use("/item", ItemsController)
 app.use("/uses", UsesController)
 app.use("/productForm", ProductFormController)
 
-app.get("/", async (req, res) => {
-    res.status(200).send({
-        demo: 'true',
-        newSchema: 'true'
-    })
-})
+
 
 
 
