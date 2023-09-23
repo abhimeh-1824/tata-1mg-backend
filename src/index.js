@@ -41,7 +41,6 @@ app.use("/healthFood", healthFoodController);
 // -------------
 app.use("/zandu", zanduController);
 app.use("/zandu/id", zanduController);
-
 app.use("/brand", BrandsController)
 app.use("/item", ItemsController)
 app.use("/uses", UsesController)
@@ -49,7 +48,8 @@ app.use("/productForm", ProductFormController)
 
 app.get("/", async (req, res) => {
     res.status(200).send({
-        demo: 'true'
+        demo: 'true',
+        newSchema: 'true'
     })
 })
 
